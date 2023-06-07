@@ -1,0 +1,1072 @@
+"State","Year","median_income"
+"Alabama",2020,57.243
+"Alabama",2019,59.558
+"Alabama",2018,53.879
+"Alabama",2017,56.219
+"Alabama",2016,53.314
+"Alabama",2015,50.9
+"Alabama",2014,48.432
+"Alabama",2013,55.126
+"Alabama",2012,51.384
+"Alabama",2011,51.417
+"Alabama",2010,50.975
+"Alabama",2009,50.609
+"Alabama",2008,56.105
+"Alabama",2007,55.294
+"Alabama",2006,51.124
+"Alabama",2005,51.666
+"Alabama",2004,52.667
+"Alabama",2003,55.014
+"Alabama",2002,56.789
+"Alabama",2001,53.936
+"Alabama",2000,55.888
+"Alaska",2020,78.236
+"Alaska",2019,83.079
+"Alaska",2018,74.161
+"Alaska",2017,86.196
+"Alaska",2016,85.494
+"Alaska",2015,85.898
+"Alaska",2014,77.473
+"Alaska",2013,84.427
+"Alaska",2012,75.246
+"Alaska",2011,69.334
+"Alaska",2010,72.039
+"Alaska",2009,77.982
+"Alaska",2008,80.72
+"Alaska",2007,82.515
+"Alaska",2006,75.999
+"Alaska",2005,77.729
+"Alaska",2004,79.172
+"Alaska",2003,76.547
+"Alaska",2002,79.7
+"Alaska",2001,87.996
+"Alaska",2000,83.377
+"Arizona",2020,70.22
+"Arizona",2019,74.897
+"Arizona",2018,67.201
+"Arizona",2017,65.984
+"Arizona",2016,64.468
+"Arizona",2015,59.751
+"Arizona",2014,56.424
+"Arizona",2013,61.29
+"Arizona",2012,55.616
+"Arizona",2011,58.698
+"Arizona",2010,58.4
+"Arizona",2009,57.899
+"Arizona",2008,59.18
+"Arizona",2007,61.848
+"Arizona",2006,62.85
+"Arizona",2005,62.924
+"Arizona",2004,63.043
+"Arizona",2003,60.789
+"Arizona",2002,60.007
+"Arizona",2001,65.509
+"Arizona",2000,62.766
+"Arkansas",2020,53.148
+"Arkansas",2019,57.799
+"Arkansas",2018,53.712
+"Arkansas",2017,54.988
+"Arkansas",2016,51.83
+"Arkansas",2015,48.944
+"Arkansas",2014,51.461
+"Arkansas",2013,45.872
+"Arkansas",2012,46.128
+"Arkansas",2011,49.862
+"Arkansas",2010,48.053
+"Arkansas",2009,46.252
+"Arkansas",2008,49.936
+"Arkansas",2007,53.438
+"Arkansas",2006,49.918
+"Arkansas",2005,50.981
+"Arkansas",2004,50.301
+"Arkansas",2003,47.257
+"Arkansas",2002,48.911
+"Arkansas",2001,51.143
+"Arkansas",2000,46.853
+"California",2020,81.278
+"California",2019,82.772
+"California",2018,76.055
+"California",2017,77.41
+"California",2016,75.235
+"California",2015,72.774
+"California",2014,69.292
+"California",2013,70.823
+"California",2012,67.41
+"California",2011,64.428
+"California",2010,67.6
+"California",2009,71.058
+"California",2008,71.921
+"California",2007,73.007
+"California",2006,74.518
+"California",2005,71.977
+"California",2004,70.773
+"California",2003,72.801
+"California",2002,71.64
+"California",2001,72.501
+"California",2000,73.862
+"Colorado",2020,87.689
+"Colorado",2019,76.832
+"Colorado",2018,78.801
+"Colorado",2017,82.877
+"Colorado",2016,79.671
+"Colorado",2015,76.159
+"Colorado",2014,69.811
+"Colorado",2013,79.115
+"Colorado",2012,67.688
+"Colorado",2011,70.781
+"Colorado",2010,75.009
+"Colorado",2009,70.8
+"Colorado",2008,76.877
+"Colorado",2007,80.089
+"Colorado",2006,75.027
+"Colorado",2005,70.161
+"Colorado",2004,73.166
+"Colorado",2003,73.746
+"Colorado",2002,72.935
+"Colorado",2001,75.776
+"Colorado",2000,76.108
+"Connecticut",2020,83.141
+"Connecticut",2019,92.507
+"Connecticut",2018,78.561
+"Connecticut",2017,82.125
+"Connecticut",2016,85.72
+"Connecticut",2015,83.355
+"Connecticut",2014,80.374
+"Connecticut",2013,80.721
+"Connecticut",2012,75.954
+"Connecticut",2011,78.973
+"Connecticut",2010,82.189
+"Connecticut",2009,82.092
+"Connecticut",2008,81.594
+"Connecticut",2007,84.019
+"Connecticut",2006,84.062
+"Connecticut",2005,79.042
+"Connecticut",2004,79.225
+"Connecticut",2003,81.166
+"Connecticut",2002,80.626
+"Connecticut",2001,81.836
+"Connecticut",2000,79.156
+"Delaware",2020,73.292
+"Delaware",2019,78.628
+"Delaware",2018,70.145
+"Delaware",2017,71.799
+"Delaware",2016,65.536
+"Delaware",2015,66.049
+"Delaware",2014,65.895
+"Delaware",2013,63.014
+"Delaware",2012,57.896
+"Delaware",2011,65.989
+"Delaware",2010,68.759
+"Delaware",2009,65.969
+"Delaware",2008,63.959
+"Delaware",2007,71.507
+"Delaware",2006,70.637
+"Delaware",2005,71.254
+"Delaware",2004,69.087
+"Delaware",2003,72.386
+"Delaware",2002,74.982
+"Delaware",2001,76.091
+"Delaware",2000,79.461
+"District of Columbia",2020,92.337
+"District of Columbia",2019,98.675
+"District of Columbia",2018,92.521
+"District of Columbia",2017,89.838
+"District of Columbia",2016,80.141
+"District of Columbia",2015,80.133
+"District of Columbia",2014,78.216
+"District of Columbia",2013,69.964
+"District of Columbia",2012,77.135
+"District of Columbia",2011,66.702
+"District of Columbia",2010,70.893
+"District of Columbia",2009,67.269
+"District of Columbia",2008,70.125
+"District of Columbia",2007,66.521
+"District of Columbia",2006,65.302
+"District of Columbia",2005,62.573
+"District of Columbia",2004,62.475
+"District of Columbia",2003,66.516
+"District of Columbia",2002,59.004
+"District of Columbia",2001,63.154
+"District of Columbia",2000,65.036
+"Florida",2020,60.46
+"Florida",2019,61.856
+"Florida",2018,58.959
+"Florida",2017,58.674
+"Florida",2016,57.779
+"Florida",2015,55.836
+"Florida",2014,52.856
+"Florida",2013,56.538
+"Florida",2012,54.466
+"Florida",2011,54.454
+"Florida",2010,54.876
+"Florida",2009,57.763
+"Florida",2008,56.585
+"Florida",2007,59.986
+"Florida",2006,61.528
+"Florida",2005,59.787
+"Florida",2004,58.283
+"Florida",2003,57.549
+"Florida",2002,57.425
+"Florida",2001,55.871
+"Florida",2000,61.303
+"Georgia",2020,62.033
+"Georgia",2019,60.012
+"Georgia",2018,60.229
+"Georgia",2017,64.089
+"Georgia",2016,60.434
+"Georgia",2015,58.058
+"Georgia",2014,56.768
+"Georgia",2013,54.744
+"Georgia",2012,56.89
+"Georgia",2011,55.501
+"Georgia",2010,54.94
+"Georgia",2009,54.862
+"Georgia",2008,58.314
+"Georgia",2007,63.716
+"Georgia",2006,66.469
+"Georgia",2005,63.871
+"Georgia",2004,58.928
+"Georgia",2003,62.668
+"Georgia",2002,64.847
+"Georgia",2001,65.313
+"Georgia",2000,66.107
+"Hawaii",2020,84.6
+"Hawaii",2019,93.265
+"Hawaii",2018,86.433
+"Hawaii",2017,81.346
+"Hawaii",2016,81.44
+"Hawaii",2015,73.778
+"Hawaii",2014,81.591
+"Hawaii",2013,74.831
+"Hawaii",2012,66.515
+"Hawaii",2011,71.285
+"Hawaii",2010,74.145
+"Hawaii",2009,70.444
+"Hawaii",2008,77.606
+"Hawaii",2007,83.863
+"Hawaii",2006,81.457
+"Hawaii",2005,82.868
+"Hawaii",2004,80.867
+"Hawaii",2003,76.542
+"Hawaii",2002,71.438
+"Hawaii",2001,72.773
+"Hawaii",2000,81.324
+"Idaho",2020,69.841
+"Idaho",2019,69.932
+"Idaho",2018,63.365
+"Idaho",2017,65.76
+"Idaho",2016,63.863
+"Idaho",2015,59.037
+"Idaho",2014,61.217
+"Idaho",2013,56.462
+"Idaho",2012,56.654
+"Idaho",2011,57.295
+"Idaho",2010,58.592
+"Idaho",2009,59.215
+"Idaho",2008,59.818
+"Idaho",2007,64.427
+"Idaho",2006,62.252
+"Idaho",2005,61.437
+"Idaho",2004,63.78
+"Idaho",2003,62.57
+"Idaho",2002,56.958
+"Idaho",2001,58.663
+"Idaho",2000,59.339
+"Illinois",2020,77.805
+"Illinois",2019,78.845
+"Illinois",2018,75.684
+"Illinois",2017,72.913
+"Illinois",2016,69.307
+"Illinois",2015,69.088
+"Illinois",2014,62.91
+"Illinois",2013,62.835
+"Illinois",2012,61.166
+"Illinois",2011,61.132
+"Illinois",2010,63.173
+"Illinois",2009,66.926
+"Illinois",2008,67.178
+"Illinois",2007,68.778
+"Illinois",2006,65.563
+"Illinois",2005,67.308
+"Illinois",2004,66.251
+"Illinois",2003,66.677
+"Illinois",2002,64.501
+"Illinois",2001,70.827
+"Illinois",2000,72.675
+"Indiana",2020,69.925
+"Indiana",2019,70.679
+"Indiana",2018,64.621
+"Indiana",2017,64.953
+"Indiana",2016,63.332
+"Indiana",2015,59.447
+"Indiana",2014,55.056
+"Indiana",2013,57.613
+"Indiana",2012,54.569
+"Indiana",2011,53.657
+"Indiana",2010,57.458
+"Indiana",2009,56.084
+"Indiana",2008,58.683
+"Indiana",2007,62.159
+"Indiana",2006,61.166
+"Indiana",2005,59.018
+"Indiana",2004,60.862
+"Indiana",2003,62.648
+"Indiana",2002,61.99
+"Indiana",2001,61.942
+"Indiana",2000,64.473
+"Iowa",2020,72.03
+"Iowa",2019,70.002
+"Iowa",2018,74.144
+"Iowa",2017,70.148
+"Iowa",2016,66.719
+"Iowa",2015,69.593
+"Iowa",2014,66.225
+"Iowa",2013,70.08
+"Iowa",2012,63.18
+"Iowa",2011,60.627
+"Iowa",2010,61.041
+"Iowa",2009,64.206
+"Iowa",2008,63.252
+"Iowa",2007,64.065
+"Iowa",2006,64.829
+"Iowa",2005,64.669
+"Iowa",2004,62.389
+"Iowa",2003,61.111
+"Iowa",2002,61.993
+"Iowa",2001,62.858
+"Iowa",2000,64.671
+"Kansas",2020,76.495
+"Kansas",2019,77.523
+"Kansas",2018,68.987
+"Kansas",2017,62.889
+"Kansas",2016,64.14
+"Kansas",2015,62.743
+"Kansas",2014,61.224
+"Kansas",2013,55.709
+"Kansas",2012,59.115
+"Kansas",2011,55.712
+"Kansas",2010,57.352
+"Kansas",2009,56.606
+"Kansas",2008,60.395
+"Kansas",2007,63.527
+"Kansas",2006,61.361
+"Kansas",2005,58.448
+"Kansas",2004,59.046
+"Kansas",2003,65.317
+"Kansas",2002,64.364
+"Kansas",2001,63.532
+"Kansas",2000,64.779
+"Kentucky",2020,59.405
+"Kentucky",2019,58.989
+"Kentucky",2018,58.863
+"Kentucky",2017,54.901
+"Kentucky",2016,51.223
+"Kentucky",2015,48.474
+"Kentucky",2014,49.014
+"Kentucky",2013,52.282
+"Kentucky",2012,48.573
+"Kentucky",2011,48.117
+"Kentucky",2010,51.188
+"Kentucky",2009,54.007
+"Kentucky",2008,51.907
+"Kentucky",2007,51.679
+"Kentucky",2006,53.189
+"Kentucky",2005,51.038
+"Kentucky",2004,51.201
+"Kentucky",2003,54.543
+"Kentucky",2002,55.519
+"Kentucky",2001,58.963
+"Kentucky",2000,57.215
+"Louisiana",2020,53.576
+"Louisiana",2019,54.797
+"Louisiana",2018,53.919
+"Louisiana",2017,48.151
+"Louisiana",2016,47.641
+"Louisiana",2015,52.516
+"Louisiana",2014,48.579
+"Louisiana",2013,54.083
+"Louisiana",2012,46.207
+"Louisiana",2011,49.085
+"Louisiana",2010,48.941
+"Louisiana",2009,57.512
+"Louisiana",2008,49.907
+"Louisiana",2007,54.117
+"Louisiana",2006,49.152
+"Louisiana",2005,51.785
+"Louisiana",2004,52.379
+"Louisiana",2003,49.479
+"Louisiana",2002,51.36
+"Louisiana",2001,51.117
+"Louisiana",2000,48.464
+"Maine",2020,66.667
+"Maine",2019,70.523
+"Maine",2018,63.295
+"Maine",2017,58.928
+"Maine",2016,57.418
+"Maine",2015,58.044
+"Maine",2014,59.237
+"Maine",2013,64.023
+"Maine",2012,58.116
+"Maine",2011,59.992
+"Maine",2010,59.689
+"Maine",2009,60.131
+"Maine",2008,59.576
+"Maine",2007,62.737
+"Maine",2006,61.483
+"Maine",2005,61.085
+"Maine",2004,59.424
+"Maine",2003,54.804
+"Maine",2002,55.656
+"Maine",2001,56.164
+"Maine",2000,58.795
+"Maryland",2020,99.215
+"Maryland",2019,101.283
+"Maryland",2018,93.031
+"Maryland",2017,90.734
+"Maryland",2016,83.277
+"Maryland",2015,84.162
+"Maryland",2014,87.252
+"Maryland",2013,80.794
+"Maryland",2012,84.926
+"Maryland",2011,83.151
+"Maryland",2010,79.951
+"Maryland",2009,81.251
+"Maryland",2008,80.369
+"Maryland",2007,85.97
+"Maryland",2006,85.765
+"Maryland",2005,84.156
+"Maryland",2004,82.105
+"Maryland",2003,77.251
+"Maryland",2002,85.187
+"Maryland",2001,82.116
+"Maryland",2000,86.04
+"Massachusetts",2020,91.912
+"Massachusetts",2019,92.949
+"Massachusetts",2018,93.163
+"Massachusetts",2017,84.269
+"Massachusetts",2016,81.591
+"Massachusetts",2015,77.605
+"Massachusetts",2014,72.344
+"Massachusetts",2013,72.844
+"Massachusetts",2012,75.256
+"Massachusetts",2011,76.435
+"Massachusetts",2010,75.882
+"Massachusetts",2009,75.158
+"Massachusetts",2008,76.091
+"Massachusetts",2007,76.582
+"Massachusetts",2006,74.533
+"Massachusetts",2005,77.904
+"Massachusetts",2004,74.795
+"Massachusetts",2003,75.244
+"Massachusetts",2002,75.292
+"Massachusetts",2001,80.157
+"Massachusetts",2000,73.762
+"Michigan",2020,67.399
+"Michigan",2019,67.951
+"Michigan",2018,65.222
+"Michigan",2017,62.342
+"Michigan",2016,64.458
+"Michigan",2015,61.986
+"Michigan",2014,59.575
+"Michigan",2013,65.898
+"Michigan",2012,59.129
+"Michigan",2011,59.01
+"Michigan",2010,57.628
+"Michigan",2009,58.222
+"Michigan",2008,62.806
+"Michigan",2007,64.67
+"Michigan",2006,65.531
+"Michigan",2005,63.88
+"Michigan",2004,60.757
+"Michigan",2003,66.483
+"Michigan",2002,64.509
+"Michigan",2001,69.103
+"Michigan",2000,71.804
+"Minnesota",2020,82.431
+"Minnesota",2019,86.292
+"Minnesota",2018,77.488
+"Minnesota",2017,77.341
+"Minnesota",2016,79.278
+"Minnesota",2015,78.599
+"Minnesota",2014,77.032
+"Minnesota",2013,74.935
+"Minnesota",2012,73.055
+"Minnesota",2011,69.804
+"Minnesota",2010,65.156
+"Minnesota",2009,71.002
+"Minnesota",2008,69.286
+"Minnesota",2007,76.051
+"Minnesota",2006,75.72
+"Minnesota",2005,75.398
+"Minnesota",2004,80.668
+"Minnesota",2003,78.003
+"Minnesota",2002,82.491
+"Minnesota",2001,80.814
+"Minnesota",2000,85.592
+"Mississippi",2020,47.242
+"Mississippi",2019,47.463
+"Mississippi",2018,46.159
+"Mississippi",2017,47.837
+"Mississippi",2016,46.402
+"Mississippi",2015,45.786
+"Mississippi",2014,40.692
+"Mississippi",2013,37.673
+"Mississippi",2012,43.318
+"Mississippi",2011,49.606
+"Mississippi",2010,47.521
+"Mississippi",2009,44.404
+"Mississippi",2008,45.975
+"Mississippi",2007,48.832
+"Mississippi",2006,46.788
+"Mississippi",2005,45.72
+"Mississippi",2004,49.972
+"Mississippi",2003,48.329
+"Mississippi",2002,46.639
+"Mississippi",2001,46.268
+"Mississippi",2000,54.113
+"Missouri",2020,65.081
+"Missouri",2019,64.218
+"Missouri",2018,66.6
+"Missouri",2017,62.481
+"Missouri",2016,62.115
+"Missouri",2015,67.696
+"Missouri",2014,64.873
+"Missouri",2013,53.941
+"Missouri",2012,58.832
+"Missouri",2011,55.261
+"Missouri",2010,57.057
+"Missouri",2009,61.735
+"Missouri",2008,58.075
+"Missouri",2007,60.263
+"Missouri",2006,60.051
+"Missouri",2005,59.782
+"Missouri",2004,60.586
+"Missouri",2003,64.623
+"Missouri",2002,64.601
+"Missouri",2001,63.415
+"Missouri",2000,71.149
+"Montana",2020,59.39
+"Montana",2019,63.792
+"Montana",2018,62.233
+"Montana",2017,63.45
+"Montana",2016,64.44
+"Montana",2015,58.775
+"Montana",2014,58.541
+"Montana",2013,50.328
+"Montana",2012,53.304
+"Montana",2011,48.625
+"Montana",2010,51.407
+"Montana",2009,51.188
+"Montana",2008,54.117
+"Montana",2007,57.184
+"Montana",2006,55.371
+"Montana",2005,51.892
+"Montana",2004,48.823
+"Montana",2003,50.367
+"Montana",2002,52.608
+"Montana",2001,49.282
+"Montana",2000,51.712
+"Nebraska",2020,75.622
+"Nebraska",2019,77.437
+"Nebraska",2018,72.911
+"Nebraska",2017,65.855
+"Nebraska",2016,67.035
+"Nebraska",2015,69.158
+"Nebraska",2014,65.148
+"Nebraska",2013,67.129
+"Nebraska",2012,61.707
+"Nebraska",2011,67.143
+"Nebraska",2010,65.384
+"Nebraska",2009,62.78
+"Nebraska",2008,63.991
+"Nebraska",2007,64.414
+"Nebraska",2006,64.854
+"Nebraska",2005,66.648
+"Nebraska",2004,62.957
+"Nebraska",2003,64.936
+"Nebraska",2002,64.631
+"Nebraska",2001,66.9
+"Nebraska",2000,65.869
+"Nevada",2020,64.02
+"Nevada",2019,75.143
+"Nevada",2018,66.749
+"Nevada",2017,64.151
+"Nevada",2016,62.583
+"Nevada",2015,59.476
+"Nevada",2014,57.135
+"Nevada",2013,60.399
+"Nevada",2012,55.958
+"Nevada",2011,56.793
+"Nevada",2010,63.76
+"Nevada",2009,65.108
+"Nevada",2008,69.057
+"Nevada",2007,70.811
+"Nevada",2006,70.427
+"Nevada",2005,67.046
+"Nevada",2004,67.872
+"Nevada",2003,66.722
+"Nevada",2002,67.896
+"Nevada",2001,69.649
+"Nevada",2000,72.192
+"New Hampshire",2020,93.045
+"New Hampshire",2019,92.093
+"New Hampshire",2018,87.769
+"New Hampshire",2017,83.591
+"New Hampshire",2016,86.1
+"New Hampshire",2015,86.541
+"New Hampshire",2014,84.081
+"New Hampshire",2013,80.498
+"New Hampshire",2012,80.177
+"New Hampshire",2011,79.534
+"New Hampshire",2010,82.979
+"New Hampshire",2009,81.181
+"New Hampshire",2008,83.478
+"New Hampshire",2007,88.519
+"New Hampshire",2006,83.477
+"New Hampshire",2005,79.249
+"New Hampshire",2004,81.691
+"New Hampshire",2003,82.055
+"New Hampshire",2002,83.547
+"New Hampshire",2001,78.743
+"New Hampshire",2000,80.346
+"New Jersey",2020,89.543
+"New Jersey",2019,92.969
+"New Jersey",2018,80.033
+"New Jersey",2017,78.739
+"New Jersey",2016,77.303
+"New Jersey",2015,78.173
+"New Jersey",2014,74.74
+"New Jersey",2013,74.271
+"New Jersey",2012,78.845
+"New Jersey",2011,75.258
+"New Jersey",2010,78.415
+"New Jersey",2009,81.999
+"New Jersey",2008,82.381
+"New Jersey",2007,79.26
+"New Jersey",2006,91.68
+"New Jersey",2005,88.128
+"New Jersey",2004,79.476
+"New Jersey",2003,82.761
+"New Jersey",2002,82.41
+"New Jersey",2001,79.418
+"New Jersey",2000,79.524
+"New Mexico",2020,53.283
+"New Mexico",2019,56.287
+"New Mexico",2018,52.096
+"New Mexico",2017,50.401
+"New Mexico",2016,54.703
+"New Mexico",2015,51.598
+"New Mexico",2014,53.482
+"New Mexico",2013,46.792
+"New Mexico",2012,51.337
+"New Mexico",2011,50.683
+"New Mexico",2010,56.206
+"New Mexico",2009,55.118
+"New Mexico",2008,53.11
+"New Mexico",2007,58.103
+"New Mexico",2006,53.92
+"New Mexico",2005,54.165
+"New Mexico",2004,56.884
+"New Mexico",2003,51.839
+"New Mexico",2002,53.548
+"New Mexico",2001,50.813
+"New Mexico",2000,55.366
+"New York",2020,71.865
+"New York",2019,76.149
+"New York",2018,72.586
+"New York",2017,68.021
+"New York",2016,69.364
+"New York",2015,66.334
+"New York",2014,62.216
+"New York",2013,58.209
+"New York",2012,56.368
+"New York",2011,61.131
+"New York",2010,61.993
+"New York",2009,63.567
+"New York",2008,63.655
+"New York",2007,64.112
+"New York",2006,64.958
+"New York",2005,65.609
+"New York",2004,64.198
+"New York",2003,63.184
+"New York",2002,63.378
+"New York",2001,64.604
+"New York",2000,64.282
+"North Carolina",2020,63.252
+"North Carolina",2019,64.814
+"North Carolina",2018,57.583
+"North Carolina",2017,54.762
+"North Carolina",2016,60.701
+"North Carolina",2015,58.091
+"North Carolina",2014,53.594
+"North Carolina",2013,53.981
+"North Carolina",2012,49.125
+"North Carolina",2011,54.575
+"North Carolina",2010,54.582
+"North Carolina",2009,53.047
+"North Carolina",2008,54.155
+"North Carolina",2007,56.998
+"North Carolina",2006,53.609
+"North Carolina",2005,58.488
+"North Carolina",2004,57.856
+"North Carolina",2003,55.049
+"North Carolina",2002,55.146
+"North Carolina",2001,58.541
+"North Carolina",2000,60.453
+"North Dakota",2020,67.109
+"North Dakota",2019,74.216
+"North Dakota",2018,71.756
+"North Dakota",2017,66.5
+"North Dakota",2016,67.95
+"North Dakota",2015,65.659
+"North Dakota",2014,69.57
+"North Dakota",2013,68.91
+"North Dakota",2012,65.928
+"North Dakota",2011,68.042
+"North Dakota",2010,63.519
+"North Dakota",2009,63.388
+"North Dakota",2008,62.608
+"North Dakota",2007,61.835
+"North Dakota",2006,55.293
+"North Dakota",2005,58.678
+"North Dakota",2004,56.392
+"North Dakota",2003,59.673
+"North Dakota",2002,54.67
+"North Dakota",2001,54.907
+"North Dakota",2000,56.791
+"Ohio",2020,63.198
+"Ohio",2019,68.527
+"Ohio",2018,66.5
+"Ohio",2017,67.076
+"Ohio",2016,60.951
+"Ohio",2015,60.955
+"Ohio",2014,56.87
+"Ohio",2013,59.12
+"Ohio",2012,52.461
+"Ohio",2011,53.902
+"Ohio",2010,57.143
+"Ohio",2009,58.077
+"Ohio",2008,59.205
+"Ohio",2007,64.315
+"Ohio",2006,61.83
+"Ohio",2005,61.474
+"Ohio",2004,61.906
+"Ohio",2003,64.265
+"Ohio",2002,64.462
+"Ohio",2001,64.099
+"Ohio",2000,67.781
+"Oklahoma",2020,54.921
+"Oklahoma",2019,62.946
+"Oklahoma",2018,58.732
+"Oklahoma",2017,57.343
+"Oklahoma",2016,57.516
+"Oklahoma",2015,53.837
+"Oklahoma",2014,54.069
+"Oklahoma",2013,53.777
+"Oklahoma",2012,57.228
+"Oklahoma",2011,58.498
+"Oklahoma",2010,53.677
+"Oklahoma",2009,58.075
+"Oklahoma",2008,58.167
+"Oklahoma",2007,56.609
+"Oklahoma",2006,52.317
+"Oklahoma",2005,52.354
+"Oklahoma",2004,56.959
+"Oklahoma",2003,53.016
+"Oklahoma",2002,55.06
+"Oklahoma",2001,54.625
+"Oklahoma",2000,51.168
+"Oregon",2020,80.443
+"Oregon",2019,78.86
+"Oregon",2018,74.626
+"Oregon",2017,69.077
+"Oregon",2016,66.765
+"Oregon",2015,69.569
+"Oregon",2014,67.445
+"Oregon",2013,57.082
+"Oregon",2012,61.21
+"Oregon",2011,62.205
+"Oregon",2010,63.016
+"Oregon",2009,62.151
+"Oregon",2008,65.252
+"Oregon",2007,65.805
+"Oregon",2006,63.435
+"Oregon",2005,61.413
+"Oregon",2004,58.943
+"Oregon",2003,61.486
+"Oregon",2002,63.13
+"Oregon",2001,63.314
+"Oregon",2000,67.051
+"Pennsylvania",2020,74.094
+"Pennsylvania",2019,74.8
+"Pennsylvania",2018,69.619
+"Pennsylvania",2017,67.736
+"Pennsylvania",2016,68.847
+"Pennsylvania",2015,69.061
+"Pennsylvania",2014,63.204
+"Pennsylvania",2013,64.255
+"Pennsylvania",2012,61.362
+"Pennsylvania",2011,60.254
+"Pennsylvania",2010,60.166
+"Pennsylvania",2009,60.979
+"Pennsylvania",2008,64.842
+"Pennsylvania",2007,63.448
+"Pennsylvania",2006,65.302
+"Pennsylvania",2005,64.391
+"Pennsylvania",2004,63.417
+"Pennsylvania",2003,63.398
+"Pennsylvania",2002,64.181
+"Pennsylvania",2001,66.729
+"Pennsylvania",2000,66.541
+"Rhode Island",2020,83.918
+"Rhode Island",2019,74.344
+"Rhode Island",2018,67.183
+"Rhode Island",2017,72.285
+"Rhode Island",2016,69.467
+"Rhode Island",2015,63.699
+"Rhode Island",2014,67.168
+"Rhode Island",2013,65.614
+"Rhode Island",2012,66.281
+"Rhode Island",2011,59.196
+"Rhode Island",2010,64.287
+"Rhode Island",2009,65.362
+"Rhode Island",2008,67.161
+"Rhode Island",2007,71.01
+"Rhode Island",2006,72.386
+"Rhode Island",2005,68.819
+"Rhode Island",2004,68.923
+"Rhode Island",2003,66.024
+"Rhode Island",2002,64.059
+"Rhode Island",2001,70.14
+"Rhode Island",2000,66.574
+"South Carolina",2020,63.159
+"South Carolina",2019,65.735
+"South Carolina",2018,61.98
+"South Carolina",2017,60.278
+"South Carolina",2016,61.347
+"South Carolina",2015,53.017
+"South Carolina",2014,51.469
+"South Carolina",2013,50.749
+"South Carolina",2012,52.492
+"South Carolina",2011,48.392
+"South Carolina",2010,51.927
+"South Carolina",2009,52.028
+"South Carolina",2008,53.177
+"South Carolina",2007,57.915
+"South Carolina",2006,53.367
+"South Carolina",2005,55.949
+"South Carolina",2004,55.631
+"South Carolina",2003,56.821
+"South Carolina",2002,57.104
+"South Carolina",2001,57.888
+"South Carolina",2000,59.274
+"South Dakota",2020,73.467
+"South Dakota",2019,68.095
+"South Dakota",2018,64.158
+"South Dakota",2017,62.905
+"South Dakota",2016,64.863
+"South Dakota",2015,62.972
+"South Dakota",2014,60.776
+"South Dakota",2013,62.224
+"South Dakota",2012,58.42
+"South Dakota",2011,57.011
+"South Dakota",2010,56.478
+"South Dakota",2009,58.009
+"South Dakota",2008,65.091
+"South Dakota",2007,60.804
+"South Dakota",2006,61.193
+"South Dakota",2005,60.011
+"South Dakota",2004,59.105
+"South Dakota",2003,58.362
+"South Dakota",2002,57.197
+"South Dakota",2001,60.856
+"South Dakota",2000,57.547
+"Tennessee",2020,57.542
+"Tennessee",2019,60.011
+"Tennessee",2018,60.487
+"Tennessee",2017,61.128
+"Tennessee",2016,57.969
+"Tennessee",2015,54.126
+"Tennessee",2014,50.079
+"Tennessee",2013,50.514
+"Tennessee",2012,50.83
+"Tennessee",2011,51.042
+"Tennessee",2010,48.058
+"Tennessee",2009,51.289
+"Tennessee",2008,50.083
+"Tennessee",2007,53.962
+"Tennessee",2006,54.816
+"Tennessee",2005,54.803
+"Tennessee",2004,54.741
+"Tennessee",2003,55.41
+"Tennessee",2002,55.923
+"Tennessee",2001,54.892
+"Tennessee",2000,53.793
+"Texas",2020,71.599
+"Texas",2019,71.474
+"Texas",2018,64.506
+"Texas",2017,66.417
+"Texas",2016,65.649
+"Texas",2015,64.582
+"Texas",2014,61.717
+"Texas",2013,59.886
+"Texas",2012,61.388
+"Texas",2011,59.213
+"Texas",2010,58.861
+"Texas",2009,60.097
+"Texas",2008,58.645
+"Texas",2007,60.325
+"Texas",2006,58.337
+"Texas",2005,57.607
+"Texas",2004,59.522
+"Texas",2003,57.991
+"Texas",2002,60.634
+"Texas",2001,62.68
+"Texas",2000,60.913
+"Utah",2020,87.915
+"Utah",2019,89.574
+"Utah",2018,83.152
+"Utah",2017,77.135
+"Utah",2016,76.188
+"Utah",2015,75.772
+"Utah",2014,72.609
+"Utah",2013,71.118
+"Utah",2012,68.972
+"Utah",2011,66.995
+"Utah",2010,70.611
+"Utah",2009,74.042
+"Utah",2008,78.888
+"Utah",2007,70.118
+"Utah",2006,73.587
+"Utah",2005,76.23
+"Utah",2004,73.144
+"Utah",2003,72.764
+"Utah",2002,72.281
+"Utah",2001,72.624
+"Utah",2000,75.02
+"Vermont",2020,70.398
+"Vermont",2019,78.746
+"Vermont",2018,75.599
+"Vermont",2017,70.385
+"Vermont",2016,68.687
+"Vermont",2015,68.037
+"Vermont",2014,69.545
+"Vermont",2013,76.32
+"Vermont",2012,65.71
+"Vermont",2011,62.611
+"Vermont",2010,69.648
+"Vermont",2009,66.227
+"Vermont",2008,63.964
+"Vermont",2007,62.077
+"Vermont",2006,70.022
+"Vermont",2005,70.515
+"Vermont",2004,68.051
+"Vermont",2003,63.883
+"Vermont",2002,64.938
+"Vermont",2001,62.579
+"Vermont",2000,62.467
+"Virginia",2020,86.053
+"Virginia",2019,86.172
+"Virginia",2018,83.243
+"Virginia",2017,78.265
+"Virginia",2016,75.025
+"Virginia",2015,70.315
+"Virginia",2014,75.785
+"Virginia",2013,76.779
+"Virginia",2012,76.409
+"Virginia",2011,75.594
+"Virginia",2010,75.176
+"Virginia",2009,76.586
+"Virginia",2008,78.192
+"Virginia",2007,77.496
+"Virginia",2006,76.943
+"Virginia",2005,72.198
+"Virginia",2004,73.532
+"Virginia",2003,80.897
+"Virginia",2002,74.954
+"Virginia",2001,77.071
+"Virginia",2000,74.409
+"Washington",2020,85.157
+"Washington",2019,87.381
+"Washington",2018,86.021
+"Washington",2017,79.071
+"Washington",2016,79.382
+"Washington",2015,76.899
+"Washington",2014,67.666
+"Washington",2013,74.467
+"Washington",2012,73.519
+"Washington",2011,68.633
+"Washington",2010,69.941
+"Washington",2009,76.448
+"Washington",2008,71.438
+"Washington",2007,76.08
+"Washington",2006,73.715
+"Washington",2005,70.435
+"Washington",2004,71.78
+"Washington",2003,70.154
+"Washington",2002,68.236
+"Washington",2001,65.181
+"Washington",2000,67.092
+"West Virginia",2020,54.396
+"West Virginia",2019,56.916
+"West Virginia",2018,54.566
+"West Virginia",2017,51.9
+"West Virginia",2016,50.077
+"West Virginia",2015,48.973
+"West Virginia",2014,45.309
+"West Virginia",2013,50.174
+"West Virginia",2012,51.489
+"West Virginia",2011,50.489
+"West Virginia",2010,53.271
+"West Virginia",2009,51.255
+"West Virginia",2008,47.928
+"West Virginia",2007,55.136
+"West Virginia",2006,51.753
+"West Virginia",2005,50.685
+"West Virginia",2004,47.985
+"West Virginia",2003,48.381
+"West Virginia",2002,44.339
+"West Virginia",2001,45.519
+"West Virginia",2000,46.402
+"Wisconsin",2020,70.553
+"Wisconsin",2019,71.38
+"Wisconsin",2018,67.574
+"Wisconsin",2017,70.164
+"Wisconsin",2016,67.535
+"Wisconsin",2015,63.384
+"Wisconsin",2014,66.534
+"Wisconsin",2013,60.259
+"Wisconsin",2012,62.751
+"Wisconsin",2011,62.848
+"Wisconsin",2010,62.703
+"Wisconsin",2009,64.859
+"Wisconsin",2008,64.587
+"Wisconsin",2007,67.168
+"Wisconsin",2006,69.632
+"Wisconsin",2005,62.096
+"Wisconsin",2004,65.755
+"Wisconsin",2003,68.325
+"Wisconsin",2002,69.324
+"Wisconsin",2001,69.562
+"Wisconsin",2000,71.135
+"Wyoming",2020,68.506
+"Wyoming",2019,69.027
+"Wyoming",2018,67.477
+"Wyoming",2017,65.803
+"Wyoming",2016,65.291
+"Wyoming",2015,69.673
+"Wyoming",2014,63.796
+"Wyoming",2013,78.566
+"Wyoming",2012,67.992
+"Wyoming",2011,65.807
+"Wyoming",2010,65.007
+"Wyoming",2009,66.42
+"Wyoming",2008,67.283
+"Wyoming",2007,63.85
+"Wyoming",2006,63.367
+"Wyoming",2005,62.191
+"Wyoming",2004,65.274
+"Wyoming",2003,62.84
+"Wyoming",2002,60.051
+"Wyoming",2001,60.93
+"Wyoming",2000,62.523
