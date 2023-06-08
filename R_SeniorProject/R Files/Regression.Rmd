@@ -1,0 +1,229 @@
+---
+title: "Regression"
+author: "Henry Siegler"
+date: "2023-03-24"
+output:
+  pdf_document
+classoption: landscape
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      warning = FALSE,
+                      message = FALSE)
+```
+
+```{r}
+library(tidyverse)
+library(here)
+library(tinytex)
+library(estimatr)
+library(texreg)
+library(stargazer)
+library(sandwich)
+
+
+df <- read_csv(here("Cleaned_Data", "DATA.csv"))
+
+
+df_nwerq <- read_csv(here("Cleaned_Data", "DATA3.csv"))
+df %>% 
+  filter(state != "District of Columbia") %>% 
+  pull(total) %>% 
+  mean()
+
+df_nwerq %>% 
+  filter(state != "District of Columbia") %>% 
+  pull(total) %>% 
+  mean()
+
+options(scipen = 99)
+
+mod_total <- lm_robust(total ~ PDMP + avg_age + bachelors_pct + median_income
+                       + unemp_rate + white_pct + personal_health_care + factor(year) + factor(state), data = df, se_type = "HC1")
+```
+
+
+```{r}
+mod2_total <- lm(total ~ PDMP + avg_age + bachelors_pct + median_income
+                       + unemp_rate + white_pct + personal_health_care +
+             factor(year) + factor(state), data = df)
+
+cov2_total <- vcovHC(mod2_total, type = "HC1")
+robust_se2_total <- sqrt(diag(cov2_total))
+
+
+mod1_total <- lm(total ~ PDMP + factor(year) + factor(state), data = df)
+cov1_total <- vcovHC(mod1_total, type = "HC1")
+robust_se1_total <- sqrt(diag(cov1_total))
+```
+
+```{r, results='asis'}
+fe_vector <- c("Fixed Effects", "Yes", "Yes")
+covariate_vector <- c("Covariates", "No", "Yes")
+
+
+stargazer(mod1_total, mod2_total, type = "latex",
+          se = list(robust_se1_total, robust_se2_total), omit = c("factor"),
+          add.lines = list(fe_vector, covariate_vector),
+          dep.var.labels = "Total Opioid Overdose Death Rate per 100,000",
+          covariate.labels = c("PDMP in Operation", "Average Age",
+                                 "Percentage of Population with Bachelor's Degree",
+                                 "Median Income (Thousands of Dollars)",
+                                 "Unemployment Rate",
+                                 "Percentage of Population that is White",
+                                 "Personal Healthcare Spending per Capita (Thousands of Dollars)"))
+```
+
+
+## HEROIN SYNTHETIC
+
+```{r}
+mod <- lm_robust(heroin_synthetic ~ PDMP + avg_age + bachelors_pct + median_income
+                       + unemp_rate + white_pct + personal_health_care + 
+                         factor(year) + factor(state), data = df, se_type = "HC1")
+```
+
+
+
+```{r}
+mod2_heroin <- lm(heroin_synthetic ~ PDMP + avg_age + bachelors_pct + median_income
+                       + unemp_rate + white_pct + personal_health_care +
+                    factor(year) + factor(state), data = df)
+
+cov2_heroin <- vcovHC(mod2_heroin, type = "HC1")
+robust_se2_heroin <- sqrt(diag(cov2_heroin))
+
+
+mod1_heroin <- lm(heroin_synthetic ~ PDMP + factor(year) + factor(state), data = df)
+
+cov1_heroin <- vcovHC(mod1_heroin, type = "HC1")
+robust_se1_heroin <- sqrt(diag(cov1_heroin))
+```
+
+```{r, results='asis'}
+fe_vector <- c("Fixed Effects", "Yes", "Yes")
+covariate_vector <- c("Covariates", "No", "Yes")
+
+
+stargazer(mod1_heroin, mod2_heroin, type = "latex",
+          se = list(robust_se1_heroin, robust_se2_heroin), omit = c("factor"),
+          add.lines = list(fe_vector, covariate_vector),
+          dep.var.labels = "Heroin and Synthetic Opioid Overdose Death Rate per 100,000",
+          covariate.labels = c("PDMP in Operation", "Average Age",
+                                 "Percentage of Population with Bachelor's Degree",
+                                 "Median Income (Thousands of Dollars)",
+                                 "Unemployment Rate",
+                                 "Percentage of Population that is White",
+                                 "Personal Healthcare Spending per Capita (Thousands of Dollars)"))
+```
+
+## PRESCRIPTION
+
+```{r}
+mod_prescription <- lm_robust(prescription ~ PDMP + avg_age + bachelors_pct + median_income
+                       + unemp_rate + white_pct + personal_health_care +
+                         factor(year) + factor(state), data = df, se_type = "HC1")
+```
+
+```{r}
+mod2_prescription <- lm(prescription ~ PDMP + avg_age + bachelors_pct + median_income
+                       + unemp_rate + white_pct + personal_health_care + 
+                     factor(year) + factor(state), data = df)
+
+cov2_prescription <- vcovHC(mod2_prescription, type = "HC1")
+robust_se2_prescription <- sqrt(diag(cov2_prescription))
+
+
+mod1_prescription <- lm(prescription ~ PDMP + factor(year) + factor(state), data = df)
+
+cov1_prescription <- vcovHC(mod1_prescription, type = "HC1")
+robust_se1_prescription <- sqrt(diag(cov1_prescription))
+```
+
+```{r, results='asis'}
+fe_vector <- c("Fixed Effects", "Yes", "Yes")
+covariate_vector <- c("Covariates", "No", "Yes")
+
+
+stargazer(mod1_prescription, mod2_prescription, type = "latex",
+          se = list(robust_se1_prescription, robust_se2_prescription), omit = c("factor"),
+          add.lines = list(fe_vector, covariate_vector),
+          dep.var.labels = "Natural, Semisynthetic, and Other Opioid Overdose Death Rate per 100,000",
+          covariate.labels = c("PDMP in Operation", "Average Age",
+                                 "Percentage of Population with Bachelor's Degree",
+                                 "Median Income (Thousands of Dollars)",
+                                 "Unemployment Rate",
+                                 "Percentage of Population that is White",
+                                 "Personal Healthcare Spending per Capita (Thousands of Dollars)"))
+```
+
+
+## METHADONE
+
+```{r}
+df2 <- read_csv(here("Cleaned_Data", "DATA_METHADONE.csv"))
+
+mod_methadone <- lm_robust(methadone_rate ~ PDMP + avg_age + bachelors_pct + median_income
+                       + unemp_rate + white_pct + personal_health_care + factor(year) + factor(state), data = df2, se_type = "HC1")
+```
+
+```{r}
+mod2_methadone <- lm(methadone_rate ~ PDMP + avg_age + bachelors_pct + median_income
+                       + unemp_rate + white_pct + personal_health_care + factor(year) + factor(state), data = df2)
+
+cov2_methadone <- vcovHC(mod2_methadone, type = "HC1")
+robust_se2_methadone <- sqrt(diag(cov2_methadone))
+
+
+mod1_methadone <- lm(methadone_rate ~ PDMP + factor(year) + factor(state), data = df2)
+
+cov1_methadone <- vcovHC(mod1_methadone, type = "HC1")
+robust_se1_methadone <- sqrt(diag(cov1_methadone))
+```
+
+```{r, results='asis'}
+fe_vector <- c("Fixed Effects", "Yes", "Yes")
+covariate_vector <- c("Covariates", "No", "Yes")
+
+
+stargazer(mod1_methadone, mod2_methadone, type = "latex",
+          se = list(robust_se1_methadone, robust_se2_methadone), omit = c("factor"),
+          add.lines = list(fe_vector, covariate_vector),
+          dep.var.labels = "Methadone Overdose Death Rate per 100,000",
+          covariate.labels = c("PDMP in Operation", "Average Age",
+                                 "Percentage of Population with Bachelor's Degree",
+                                 "Median Income (Thousands of Dollars)",
+                                 "Unemployment Rate",
+                                 "Percentage of Population that is White",
+                                 "Personal Healthcare Spending per Capita (Thousands of Dollars)"))
+```
+
+## ALL RESULTS
+
+
+```{r, results='asis'}
+fe_vector_final <- c("Fixed Effects", "Yes", "Yes", "Yes", "Yes")
+covariate_vector_final <- c("Covariates", "Yes", "Yes", "Yes", "Yes")
+
+
+stargazer(mod2_total, mod2_heroin, mod2_prescription, mod2_methadone, type = "latex",
+          se = list(robust_se2_total, robust_se2_heroin, robust_se2_prescription, robust_se2_methadone), omit = c("factor"),
+          add.lines = list(fe_vector_final, covariate_vector_final),
+          dep.var.labels.include = FALSE,
+          dep.var.labels = "Overdose Death Rate per 100,000",
+          column.labels = c("All Opioids", "Heroin and Synthetic Opioids", "Natural, Semisynthetic, and Other Opiods", "Methadone"),
+          covariate.labels = c("PDMP in Operation", "Average Age",
+                                 "Percentage of Population with Bachelor's Degree",
+                                 "Median Income (Thousands of Dollars)",
+                                 "Unemployment Rate",
+                                 "Percentage of Population that is White",
+                                 "Personal Healthcare Spending per Capita (Thousands of Dollars)"))
+```
+
+
+
+
+
+
+
