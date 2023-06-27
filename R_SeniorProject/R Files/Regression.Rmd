@@ -66,13 +66,15 @@ covariate_vector <- c("Covariates", "No", "Yes")
 stargazer(mod1_total, mod2_total, type = "latex",
           se = list(robust_se1_total, robust_se2_total), omit = c("factor"),
           add.lines = list(fe_vector, covariate_vector),
-          dep.var.labels = "Total Opioid Overdose Death Rate per 100,000",
-          covariate.labels = c("PDMP in Operation", "Average Age",
-                                 "Percentage of Population with Bachelor's Degree",
-                                 "Median Income (Thousands of Dollars)",
-                                 "Unemployment Rate",
-                                 "Percentage of Population that is White",
-                                 "Personal Healthcare Spending per Capita (Thousands of Dollars)"))
+          dep.var.caption = "Dependent Variable: Total Opioid Overdose Death Rate per 100,000",
+          dep.var.labels.include = FALSE,
+          covariate.labels = c("PDMP in Operation", 
+                               "Average Age", 
+                               "Percentage with Bachelor's Degree",
+                               "Median Income", 
+                               "Unemployment Rate", 
+                               "Percentage that is White", 
+                               "Personal Healthcare Spending per Capita"))
 ```
 
 
@@ -109,13 +111,15 @@ covariate_vector <- c("Covariates", "No", "Yes")
 stargazer(mod1_heroin, mod2_heroin, type = "latex",
           se = list(robust_se1_heroin, robust_se2_heroin), omit = c("factor"),
           add.lines = list(fe_vector, covariate_vector),
-          dep.var.labels = "Heroin and Synthetic Opioid Overdose Death Rate per 100,000",
-          covariate.labels = c("PDMP in Operation", "Average Age",
-                                 "Percentage of Population with Bachelor's Degree",
-                                 "Median Income (Thousands of Dollars)",
-                                 "Unemployment Rate",
-                                 "Percentage of Population that is White",
-                                 "Personal Healthcare Spending per Capita (Thousands of Dollars)"))
+          dep.var.caption = "Dependent Variable: Heroin and Synthetic Opioid Overdose Death Rate per 100,000",
+          dep.var.labels.include = FALSE,
+          covariate.labels = c("PDMP in Operation", 
+                               "Average Age", 
+                               "Percentage with Bachelor's Degree",
+                               "Median Income", 
+                               "Unemployment Rate", 
+                               "Percentage that is White", 
+                               "Personal Healthcare Spending per Capita"))
 ```
 
 ## PRESCRIPTION
@@ -149,13 +153,15 @@ covariate_vector <- c("Covariates", "No", "Yes")
 stargazer(mod1_prescription, mod2_prescription, type = "latex",
           se = list(robust_se1_prescription, robust_se2_prescription), omit = c("factor"),
           add.lines = list(fe_vector, covariate_vector),
-          dep.var.labels = "Natural, Semisynthetic, and Other Opioid Overdose Death Rate per 100,000",
-          covariate.labels = c("PDMP in Operation", "Average Age",
-                                 "Percentage of Population with Bachelor's Degree",
-                                 "Median Income (Thousands of Dollars)",
-                                 "Unemployment Rate",
-                                 "Percentage of Population that is White",
-                                 "Personal Healthcare Spending per Capita (Thousands of Dollars)"))
+          dep.var.caption = "Dependent Variable: Prescription Opioid Overdose Death Rate per 100,000",
+          dep.var.labels.include = FALSE,
+          covariate.labels = c("PDMP in Operation", 
+                               "Average Age", 
+                               "Percentage with Bachelor's Degree",
+                               "Median Income", 
+                               "Unemployment Rate", 
+                               "Percentage that is White", 
+                               "Personal Healthcare Spending per Capita"))
 ```
 
 
@@ -190,13 +196,15 @@ covariate_vector <- c("Covariates", "No", "Yes")
 stargazer(mod1_methadone, mod2_methadone, type = "latex",
           se = list(robust_se1_methadone, robust_se2_methadone), omit = c("factor"),
           add.lines = list(fe_vector, covariate_vector),
-          dep.var.labels = "Methadone Overdose Death Rate per 100,000",
-          covariate.labels = c("PDMP in Operation", "Average Age",
-                                 "Percentage of Population with Bachelor's Degree",
-                                 "Median Income (Thousands of Dollars)",
-                                 "Unemployment Rate",
-                                 "Percentage of Population that is White",
-                                 "Personal Healthcare Spending per Capita (Thousands of Dollars)"))
+          dep.var.caption = "Dependent Variable: Methadone Overdose Death Rate per 100,000",
+          dep.var.labels.include = FALSE,
+          covariate.labels = c("PDMP in Operation", 
+                               "Average Age", 
+                               "Percentage with Bachelor's Degree",
+                               "Median Income", 
+                               "Unemployment Rate", 
+                               "Percentage that is White", 
+                               "Personal Healthcare Spending per Capita"))
 ```
 
 ## ALL RESULTS
@@ -207,18 +215,21 @@ fe_vector_final <- c("Fixed Effects", "Yes", "Yes", "Yes", "Yes")
 covariate_vector_final <- c("Covariates", "Yes", "Yes", "Yes", "Yes")
 
 
-stargazer(mod2_total, mod2_heroin, mod2_prescription, mod2_methadone, type = "latex",
-          se = list(robust_se2_total, robust_se2_heroin, robust_se2_prescription, robust_se2_methadone), omit = c("factor"),
-          add.lines = list(fe_vector_final, covariate_vector_final),
-          dep.var.labels.include = FALSE,
-          dep.var.labels = "Overdose Death Rate per 100,000",
-          column.labels = c("All Opioids", "Heroin and Synthetic Opioids", "Natural, Semisynthetic, and Other Opiods", "Methadone"),
-          covariate.labels = c("PDMP in Operation", "Average Age",
-                                 "Percentage of Population with Bachelor's Degree",
-                                 "Median Income (Thousands of Dollars)",
-                                 "Unemployment Rate",
-                                 "Percentage of Population that is White",
-                                 "Personal Healthcare Spending per Capita (Thousands of Dollars)"))
+stargazer(mod2_total, mod2_heroin, mod2_prescription, mod2_methadone,
+          type = "latex",
+          se = list(robust_se2_total, robust_se2_heroin, robust_se2_prescription, robust_se2_methadone), 
+          omit = c("factor"), 
+          add.lines = list(fe_vector_final, covariate_vector_final), 
+          dep.var.caption = "Dependent Variable: Overdose Death Rate per 100,000 for Four Categories of Opioids:", 
+          dep.var.labels.include = FALSE, 
+          column.labels = c("All", "Heroin and Synthetic", "Prescription", "Methadone"),
+          covariate.labels = c("PDMP in Operation", 
+                               "Average Age", 
+                               "Percentage with Bachelor's Degree",
+                               "Median Income", 
+                               "Unemployment Rate", 
+                               "Percentage that is White", 
+                               "Personal Healthcare Spending per Capita"))
 ```
 
 

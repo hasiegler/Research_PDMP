@@ -1,17 +1,8 @@
----
-title: "Stylized facts"
-author: "Henry Siegler"
-date: "2023-06-03"
-output: html_document
----
+Creating Figures
+================
+Henry Siegler
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE,
-                      message = FALSE,
-                      warning = FALSE)
-```
-
-```{r}
+``` r
 library(tidyverse)
 library(here)
 library(kableExtra)
@@ -19,82 +10,14 @@ library(knitr)
 library(extrafont)
 ```
 
-```{r}
+``` r
 df <- read_csv(here("Cleaned_Data", "DATA.csv"))
 df2 <- read_csv(here("Cleaned_Data", "DATA_METHADONE.csv"))
 ```
 
-```{r}
-median1 <- df %>% 
-  group_by(year) %>% 
-  summarize(median_total = median(total),
-            median_heroin = median(heroin_synthetic),
-            median_prescription = median(prescription))
+# Figure 1
 
-median2 <- df2 %>% 
-  group_by(year) %>% 
-  summarize(median_methadone = median(methadone_rate))
-
-median_data <- left_join(median1, median2, by = "year")
-
-median_long <- median_data %>% 
-  pivot_longer(!year, names_to = "Rate", values_to = "Value")
-
-captions <- median_long %>% 
-  group_by(Rate) %>% 
-  slice(n()) %>% 
-  mutate(Captions = c(""))
-```
-
-```{r}
-#font_import()
-#loadfonts(device = "win")
-```
-
-```{r}
-
-figure3 <- ggplot(median_long, aes(x = year, y = Value, color = Rate)) +
-  geom_line(size = 1)+
-  labs(x = "Year", y = "Overdose Rate per 100,000",
-       title = "Median Overdose Rate by Opioid Category") + 
-  theme_minimal() + 
-  theme(legend.position = "none",
-        panel.grid.minor.x = element_blank(),
-        plot.title = element_text(hjust = 0.4, size = 16),
-        text = element_text(family = "Times New Roman", size = 12)) + 
-  scale_color_manual(values = c("darkorchid1", "firebrick1", "dodgerblue", "green3")) + 
-  scale_y_continuous(limits = c(0,25))
-
-figure3
-
-#ggsave(filename = here("figure3.jpeg"), plot = figure3, device = "jpeg", width = 7, height = 5)
-```
-
-```{r}
-average_rate <- df %>%
-  group_by(PDMP, year) %>%
-  summarize(Average_Rate = mean(total),
-            count = sum(PDMP ==1))
-
-
-figure2 <- ggplot(average_rate, aes(x = year, y = Average_Rate, color = factor(PDMP))) + 
-  geom_line(size = 1) + 
-  labs(x = "Year", y = "Overdose Rate per 100,000",
-       title = "Average Total Opioid Overdose Rate by PDMP Status") + 
-  scale_color_manual(values = c("blue", "red")) +
-  theme_minimal() + 
-  theme(panel.grid.minor.x = element_blank(),
-        plot.title = element_text(hjust = 0.4, size = 16),
-        legend.position = "none",
-        text = element_text(family = "Times New Roman", size = 12)) + 
-  scale_y_continuous(limits = c(0, 40))
-
-figure2
-
-#ggsave(filename = here("figure2.jpeg"), plot = figure2, device = "jpeg", width = 7, height = 5)
-```
-
-```{r}
+``` r
 PDMP_Year <- read_csv(here("Cleaned_Data", "PDMP.csv"))
 PDMP_Year <- PDMP_Year %>% 
   mutate(operational_year = as.numeric(operational_year))
@@ -128,7 +51,7 @@ new_rows <- data.frame(operational_year = c(2000,
 cumulative_PDMPS <- rbind(cumulative_PDMPS, new_rows)
 ```
 
-```{r}
+``` r
 figure1 <- cumulative_PDMPS %>% 
   ggplot(aes(x = operational_year, y = cumulative_count)) + 
   geom_line(size = 1, col = "blue") + 
@@ -142,11 +65,96 @@ figure1 <- cumulative_PDMPS %>%
         text = element_text(family = "Times New Roman", size = 12))
 
 figure1
+```
 
+![](Figures_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+
+``` r
 #ggsave(filename = here("figure1.jpeg"), plot = figure1, device = "jpeg", width = 7, height = 5)
 ```
 
-```{r}
+# Figure 2
+
+``` r
+average_rate <- df %>%
+  group_by(PDMP, year) %>%
+  summarize(Average_Rate = mean(total),
+            count = sum(PDMP ==1))
+
+figure2 <- ggplot(average_rate, aes(x = year, y = Average_Rate, color = factor(PDMP))) + 
+  geom_line(size = 1) + 
+  labs(x = "Year", y = "Overdose Rate per 100,000",
+       title = "Average Total Opioid Overdose Rate by PDMP Status") + 
+  scale_color_manual(values = c("blue", "red")) +
+  theme_minimal() + 
+  theme(panel.grid.minor.x = element_blank(),
+        plot.title = element_text(hjust = 0.4, size = 16),
+        legend.position = "none",
+        text = element_text(family = "Times New Roman", size = 12)) + 
+  scale_y_continuous(limits = c(0, 40))
+
+figure2
+```
+
+![](Figures_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
+
+``` r
+#ggsave(filename = here("figure2.jpeg"), plot = figure2, device = "jpeg", width = 7, height = 5)
+```
+
+Line labels were added afterwards in Microsoft Word.
+
+# Figure 3
+
+``` r
+median1 <- df %>% 
+  group_by(year) %>% 
+  summarize(median_total = median(total),
+            median_heroin = median(heroin_synthetic),
+            median_prescription = median(prescription))
+
+median2 <- df2 %>% 
+  group_by(year) %>% 
+  summarize(median_methadone = median(methadone_rate))
+
+median_data <- left_join(median1, median2, by = "year")
+
+median_long <- median_data %>% 
+  pivot_longer(!year, names_to = "Rate", values_to = "Value")
+
+captions <- median_long %>% 
+  group_by(Rate) %>% 
+  slice(n()) %>% 
+  mutate(Captions = c(""))
+```
+
+``` r
+figure3 <- ggplot(median_long, aes(x = year, y = Value, color = Rate)) +
+  geom_line(size = 1)+
+  labs(x = "Year", y = "Overdose Rate per 100,000",
+       title = "Median Overdose Rate by Opioid Category") + 
+  theme_minimal() + 
+  theme(legend.position = "none",
+        panel.grid.minor.x = element_blank(),
+        plot.title = element_text(hjust = 0.4, size = 16),
+        text = element_text(family = "Times New Roman", size = 12)) + 
+  scale_color_manual(values = c("darkorchid1", "firebrick1", "dodgerblue", "green3")) + 
+  scale_y_continuous(limits = c(0,25))
+
+figure3
+```
+
+![](Figures_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
+
+``` r
+#ggsave(filename = here("figure3.jpeg"), plot = figure3, device = "jpeg", width = 7, height = 5)
+```
+
+Line labels were added afterwards in Microsoft Word.
+
+# Figure 4
+
+``` r
 quantile_overall <- quantile(df$total, probs = c(0.05, 0.25, 0.5, 0.75, 0.95))
 
 quantile_2000 <- df %>% 
@@ -193,7 +201,15 @@ rownames(quantiles_df) <- c("2000 - 2020",
 
 quantiles_df <- round(quantiles_df, 2)
 
-kableExtra::kable(quantiles_df, format = "html", caption = "Quantiles of the Total Opioid Overdose Rate in Select Years") %>% 
-  kable_styling(full_width = TRUE, font)
+quantiles_df
 ```
 
+    ##               5%   25%   50%   75%   95%
+    ## 2000 - 2020 2.16  4.58  7.25 11.44 26.81
+    ## 2000        0.76  1.89  2.69  4.45  8.45
+    ## 2005        2.05  3.62  5.13  7.86 11.38
+    ## 2010        3.44  5.10  6.85  9.70 14.16
+    ## 2015        4.64  6.32 10.83 15.17 24.09
+    ## 2020        6.48 12.25 22.31 29.04 41.97
+
+These numbers were moved to Excel to create an APA styled table.
