@@ -3,10 +3,7 @@ library(tidyverse)
 library(ipumsr)
 library(imputeTS)
 
-
-
-
-## MEDIAN INCOMES
+# MEDIAN INCOMES
 income_data <- readxl::read_xlsx(here("Uncleaned_Data", "MedianIncomesCleaned.xlsx"))
 colnames(income_data) <- str_c(colnames(income_data), " ", income_data[1,])
 income_data <- income_data[-1:-2,]
@@ -28,35 +25,34 @@ income_data <- income_data %>%
 income_data <- income_data %>% 
   distinct(State, Year, .keep_all = TRUE) %>% 
   mutate(median_income = median_income / 1000)
+
 #write.csv(income_data, file = "INCOME.csv", row.names = FALSE)
 
 
 
-
-
-## OVERDOSE RATES
-## All Opioids
+# OVERDOSE RATES
+# All Opioids
 opioid_data <- read.delim(here("Uncleaned_Data", "All_Opioids.txt"))
 opioid_data <- opioid_data[,c(2, 4, 6, 7)]
 opioid_data$overdose_Rate <- opioid_data$Deaths / opioid_data$Population * 100000
 opioid_data <- opioid_data %>% 
   select(-Deaths, -Population)
 
-## Heroin and Synthetic Opioids T40.1 40.4
+# Heroin and Synthetic Opioids T40.1 40.4
 heroin_data <- read.delim(here("Uncleaned_Data", "Heroin_Synthetic.txt"))
 heroin_data <- heroin_data[,c(2, 4, 6, 7)]
 heroin_data$heroin_rate <- heroin_data$Deaths / heroin_data$Population * 100000
 heroin_data <- heroin_data %>% 
   select(-Deaths, -Population)
 
-## Prescription Opioids T40.2 40.6
+# Prescription Opioids T40.2 40.6
 prescription_data <- read.delim(here("Uncleaned_Data", "Prescription_Opioids.txt"))
 prescription_data <- prescription_data[,c(2, 4, 6, 7)]
 prescription_data$prescription_rate <- prescription_data$Deaths / prescription_data$Population * 100000
 prescription_data <- prescription_data %>% 
   select(-Deaths, -Population)
 
-##METHADONE T40.3
+# METHADONE T40.3
 methadone_data <- read.delim(here("Uncleaned_Data", "Methadone.txt"))
 methadone_data <- methadone_data[,c(2, 4, 6, 7)]
 methadone_data$methadone_rate <- methadone_data$Deaths / methadone_data$Population * 100000
@@ -64,7 +60,9 @@ methadone_data <- methadone_data %>%
   select(-Deaths, -Population)
 
 
-## COMBINING OVERDOSE RATES
+
+
+# COMBINING OVERDOSE RATES
 all_overdoses<- left_join(income_data, opioid_data, by = c("Year", "State"))
 all_overdoses<- left_join(all_overdoses, heroin_data, by = c("Year", "State"))
 all_overdoses<- left_join(all_overdoses, prescription_data, by = c("Year", "State"))
@@ -80,7 +78,7 @@ sum(data_missing$miss_total)
 sum(data_missing$miss_heroin)
 sum(data_missing$miss_prescription)
 
-## INTERPOLATING 3 RATES
+# INTERPOLATING 3 RATES
 interpolated_data <- list()
 for (state in unique(all_overdoses$State)) {
   # Filter the data for the current state
@@ -101,7 +99,8 @@ row.names(interpolated_df) <- NULL
 #write.csv(interpolated_df, file = "OVERDOSE_RATES.csv", row.names = FALSE)
 
 
-## METHADONE
+
+# METHADONE
 methadone <- left_join(income_data, methadone_data, by = c("Year", "State"))
 methadone <- methadone %>% 
   filter(State != "North Dakota",
@@ -125,9 +124,7 @@ row.names(interpolated_methadone_df) <- NULL
 
 
 
-
-
-## PDMP DATES
+# PDMP DATES
 PDMP_Year <- readxl::read_xlsx(here("Uncleaned_Data", "PDMPYear.xlsx"))
 PDMP_Year <- PDMP_Year %>% 
   mutate(Year = as.numeric(Year)) %>% 
@@ -136,10 +133,7 @@ PDMP_Year <- PDMP_Year %>%
 
 
 
-
-
-
-## PERSONAL HEALTH CARE EXPENDITURES
+# PERSONAL HEALTH CARE EXPENDITURES
 health_data <- read.csv(here("Uncleaned_Data", "PersonalHealthCare.csv"))
 # fix the column names
 new_colnames_health <- c()
@@ -156,7 +150,9 @@ health_data <- health_data %>%
 #write.csv(health_data, file = "HEALTH_CARE.csv", row.names = FALSE)
 
 
-## PERCENTAGE OF POPULATION WHITE
+
+
+# PERCENTAGE OF POPULATION WHITE
 library(ipumsr)
 cps_ddi_white1 = read_ipums_ddi(
   'race1.xml'
@@ -201,9 +197,9 @@ data_white3$WHITE_PCT <- data_white3$WHITE_PERWT / data_white3$TOTAL_PERWT * 100
 data_white3 <- data_white3 %>% 
   select(YEAR, STATEFIP, WHITE_PCT)
 
-# Combining Dataframes for White
-data_white <- bind_rows(data_white1, data_white2, data_white3)
 
+# COMBINING DATAFRAMES FOR RACE
+data_white <- bind_rows(data_white1, data_white2, data_white3)
 
 data_state_names <- data.frame(STATEFIP = c(1,2,4,5,6,8,9,10,11,12,13,15,16,17,
                                             18,19,20,21,22,23,24,25,26,27,28,29,
@@ -267,13 +263,12 @@ data_white <- data_white %>%
 data_white <- data_white %>% 
   select(YEAR, State, WHITE_PCT) %>% 
   rename(Year = "YEAR")
-
 #write.csv(data_white, "WHITE.csv", row.names = FALSE)
   
 
 
 
-## BACHELOR'S DEGREE PERCENTAGE OF POPULATION
+# BACHELOR'S DEGREE PERCENTAGE OF POPULATION
 cps_ddi_educ1 = read_ipums_ddi(
   'educ1.xml'
 )
@@ -300,7 +295,7 @@ data_educ2$bachelors_percent <- data_educ2$BACHELORS_PERWT / data_educ2$TOTAL_PE
 data_educ2 <- data_educ2 %>% 
   select(YEAR, STATEFIP, bachelors_percent)
 
-# Combining Dataframes for Bachelor's
+# COMBING DATAFRAMES FOR BACHELOR'S DEGREE
 data_educ <- bind_rows(data_educ1, data_educ2)
 data_educ <- data_educ %>% 
   left_join(data_state_names, by = "STATEFIP")
@@ -346,7 +341,7 @@ data_age3 <- aggregate(cbind(AVG_AGE = AGE * PERWT) ~ YEAR + STATEFIP, data = ag
 data_age3$TOTAL_PERWT <- aggregate(age3$PERWT, by = list(YEAR = age3$YEAR, STATEFIP = age3$STATEFIP), sum)$x
 data_age3$AVG_AGE <- data_age3$AVG_AGE / data_age3$TOTAL_PERWT
 
-# Combining Dataframes for Age
+# COMBINING DATAFRAMES FOR AGE
 data_age <- bind_rows(data_age1, data_age2, data_age3)
 data_age <- data_age %>% 
   left_join(data_state_names, by = "STATEFIP")
@@ -358,9 +353,7 @@ write.csv(data_age, "AVG_AGE.csv", row.names = FALSE)
 
 
 
-
-
-# Unemployment Rate
+# UNEMPLOYMENT RATE
 cps_ddi_emp1 = read_ipums_ddi(
   'emp1.xml'
 )
@@ -418,7 +411,8 @@ labforce3 <- emp3 %>%
 data_unemp3 <- left_join(unemp3, labforce3, by = c("YEAR", "STATEFIP")) %>% 
   mutate(unemp_rate = weighted_unemp / weighted_labor * 100)
 
-#Combining Dataframes for Unemployment
+# COMBINING DATAFRAMES FOR UNEMPLOYMENT
+
 data_unemp <- bind_rows(data_unemp1, data_unemp2, data_unemp3)
 data_unemp <- data_unemp %>% 
   left_join(data_state_names, by = "STATEFIP")

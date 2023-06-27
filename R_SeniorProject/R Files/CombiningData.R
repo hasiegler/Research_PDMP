@@ -1,6 +1,6 @@
 library(tidyverse)
 
-## READ IN ALL DATA
+# READ IN ALL DATA
 
 OVERDOSE_RATES <- read_csv(here("Cleaned_Data", "OVERDOSE_RATES.csv"))
 
@@ -21,7 +21,7 @@ WHITE <- read_csv(here("Cleaned_Data", "WHITE.csv"))
 HEALTH_CARE <- read_csv(here("Cleaned_Data", "HEALTH_CARE.csv"))
 
 
-## OVERDOSE RATES
+# OVERDOSE RATES
 
 DATA <- OVERDOSE_RATES %>% 
   left_join(AVG_AGE, by = c("Year", "State"))
